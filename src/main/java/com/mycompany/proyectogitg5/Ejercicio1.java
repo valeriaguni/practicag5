@@ -16,6 +16,7 @@ public class Ejercicio1 {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("Hola estoy escribiendo codigo para subirlo en git");
+        System.out.println("Hice un cambio en ejercicio1 ");
                 
     }
     
