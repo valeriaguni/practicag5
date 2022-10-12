@@ -1,0 +1,43 @@
+create database doctors;
+use doctors;
+CREATE TABLE IF NOT EXISTS doctor (
+    id int primary key auto_increment,
+    name varchar(250),
+    department varchar(250),
+    year int,
+    description varchar(250)
+);
+
+create table if not exists specialty(
+    id int primary key auto_increment,
+    name varchar(250),
+    description varchar(250)
+);
+
+
+create table if not exists client(
+    idClient int primary key auto_increment,
+    name varchar(250),
+    email varchar(250),
+    password varchar(250),
+    age int
+);
+
+create table if not exists message(
+   idMessage int primary key auto_increment,
+   messageText varchar(250)
+);
+
+CREATE TABLE IF NOT EXISTS reservation(
+    idReservation int primary key auto_increment,
+    startDate date,
+    devolutionDate date
+);
+
+CREATE table if not exists score(
+    id int primary key auto_increment,
+    calification int,
+    reservation varchar(250),
+    message varchar(250)
+
+);
